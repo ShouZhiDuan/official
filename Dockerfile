@@ -1,4 +1,4 @@
-FROM openjdk-11
+FROM maven:3.6.3-openjdk-11
 
 #定义变量
 ENV project_port 80
