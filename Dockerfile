@@ -1,10 +1,6 @@
 FROM maven:3.6.3-openjdk-11
 
 #定义变量
-ENV project_port 80
-ENV project_name nvclouds-offical
-ENV work_dir nvclouds_offical_dir
-
 ADD src/main/docker /nvclouds_offical_dir
 #容器中工作目录
 WORKDIR /nvclouds_offical_dir
