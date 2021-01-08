@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
  * @Description:
  */
 @Slf4j
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/note")
 public class NoteController {
