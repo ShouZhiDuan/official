@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.official.nvclouds.mapper.OfficialUserNoteMapper">
+  <resultMap id="BaseResultMap" type="com.official.nvclouds.model.OfficialUserNote">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone_num" jdbcType="VARCHAR" property="phoneNum" />
+    <result column="organization" jdbcType="VARCHAR" property="organization" />
+    <result column="creted" jdbcType="TIMESTAMP" property="creted" />
+    <result column="note" jdbcType="LONGVARCHAR" property="note" />
+  </resultMap>
+</mapper>
