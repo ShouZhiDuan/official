@@ -37,6 +37,11 @@ public class NoteController {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
+    @GetMapping("/test")
+    public Object test() {
+        return "======test======";
+    }
+
     @PostMapping("/commit")
     public BaseResult commitNote(@RequestBody OfficialUserNoteDto officialUserNoteDto, HttpServletRequest request){
         try {
