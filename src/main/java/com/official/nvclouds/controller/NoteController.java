@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -38,8 +39,10 @@ public class NoteController {
     private StringRedisTemplate redisTemplate;
 
     @GetMapping("/test")
-    public Object test() {
-        return "======test======";
+    public Object test(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        System.out.println(session.getId());
+        return session.getId();
     }
 
     @PostMapping("/commit")
